@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Delius+Unicase&family=Dangrek&family=DM+Sans&family=Roboto&family=Segoe+UI&family=Inter:wght@700&display=swap" rel="stylesheet"/>
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calci">
+        <h4>Calci</h4>
+        <div id="display">
+            <input type="text" id="display-input" disabled>
+        </div>
+        <div id="keypad">
+            <button class="button" onclick="addToDisplay('7')">7</button>
+            <button class="button" onclick="addToDisplay('8')">8</button>
+            <button class="button" onclick="addToDisplay('9')">9</button>
+            <button class="button del-btn" onclick="delValue()">DEL</button>
+            <button class="button" onclick="addToDisplay('4')">4</button>
+            <button class="button" onclick="addToDisplay('5')">5</button>
+            <button class="button" onclick="addToDisplay('6')">6</button>
+            <button class="button" onclick="addToDisplay('+')">+</button>
+            <button class="button" onclick="addToDisplay('1')">1</button>
+            <button class="button" onclick="addToDisplay('2')">2</button>
+            <button class="button" onclick="addToDisplay('3')">3</button>
+            <button class="button" onclick="addToDisplay('-')">-</button>
+            <button class="button" onclick="addToDisplay('.')">.</button>
+            <button class="button" onclick="addToDisplay('0')">0</button>
+            <button class="button" onclick="addToDisplay('/')">/</button>
+            <button class="button" onclick="addToDisplay('*')">x</button>
+            <button class="button reset-btn" onclick="clearDisplay()">RESET</button>
+            <button class="button equals-btn" onclick="calculate()">=</button>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
